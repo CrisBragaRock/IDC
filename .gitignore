@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+
+# Playbook interno e referências de IA — não versionar
+Playbook.md
+ARQUITETURA_REFERENCIA.md
+CLAUDE.md
+.claude/

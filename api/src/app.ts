@@ -58,8 +58,8 @@ app.use((req: Request, res: Response) => {
 
 app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
   console.error(err);
-  const message = process.env.NODE_ENV === 'production' ? 'Internal server error' : err.message;
-  res.status(500).json({ error: message });
+  // TODO diagnóstico temporário: reverter para esconder err.message em produção assim que resolvido
+  res.status(500).json({ error: err.message, stack: err.stack });
 });
 
 const PORT = Number(process.env.PORT) || 4000;

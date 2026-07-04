@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.butonHover:hover {
+    background-color: #091638;
+}

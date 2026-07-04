@@ -9,7 +9,7 @@ export default function Layout() {
     <div className="min-h-screen bg-gray-950 text-gray-100">
       <nav className="border-b border-gray-800 px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 text-lg font-bold">
-          <img src={logo} alt="IDC" className="h-8 w-8" />
+          <img src={logo} alt="IDC" className="w-8 h-8" />
           IDC
         </Link>
         <div className="flex items-center gap-4 text-sm">

@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+
 import logo from '../img/logo1.png';
 
 export default function Layout() {
